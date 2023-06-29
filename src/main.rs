@@ -27,7 +27,7 @@ fn handle(mut stream: TcpStream){
         .collect();
 
     
-    //println!("request: {request:?}");
+    println!("request: {request:?}");
     println!("INSERTION SARA");
     println!("INSERTION SARA 2");
     let response = "HTTP/1.1 200 OK\r\n\r\n";
