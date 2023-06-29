@@ -7,10 +7,9 @@ fn main()->Result<(), Box<dyn Error>> {
 
     let listener = TcpListener::bind("127.0.0.1:7878")?;
 
-    for (_i, stream) in listener.incoming().enumerate(){
+    for (i, stream) in listener.incoming().enumerate(){
         let stream = stream.unwrap();
-        println!("stream detected: {stream:?}");
-        // handle tcp stream 
+        println!("stream {i} detected: {stream:?}");
         handle(stream);
     }
 
@@ -28,8 +27,6 @@ fn handle(mut stream: TcpStream){
 
     
     println!("request: {request:?}");
-    println!("INSERTION SARA");
-
     let response = "HTTP/1.1 200 OK\r\n\r\n";
 
     stream.write_all(response.as_bytes()).unwrap();
