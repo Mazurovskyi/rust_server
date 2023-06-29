@@ -1,17 +1,20 @@
 use std::{
-    io::{prelude::*, BufReader, self},
-    net::{TcpListener, TcpStream},
+    io::{prelude::*, BufReader},
+    net::{TcpListener, TcpStream}, error::Error,
 };
 
-fn main() {
+fn main()->Result<(), Box<dyn Error>> {
 
-    let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
+    let listener = TcpListener::bind("127.0.0.1:7878")?;
 
     for (i, stream) in listener.incoming().enumerate(){
         let stream = stream.unwrap();
         println!("stream {i} detected: {stream:?}");
+        // handle tcp stream
         handle(stream);
     }
+
+    Ok(())
 }
 
 fn handle(mut stream: TcpStream){
