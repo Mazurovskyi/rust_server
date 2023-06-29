@@ -31,31 +31,3 @@ fn handle(mut stream: TcpStream){
 
     stream.write_all(response.as_bytes()).unwrap();
 }
-
-fn do_smth(){
-
-}
-
-fn do_smth_2(){
-    
-}
-
-fn le_func(){
-    
-}
-
-
-/// aaaaaaaaaaaaaaa aaaaaaaaaaaaaaa
-/// bbbbbbbbbbbbbbb bbbbbbbbbbbbbbb
-/// kkkkkkkkkkkkkkk kkkkkkkkkkkkkkk
-/// ccccccccccccccc ccccccccccccccc
-/// ddddddddddddddd ddddddddddddddd
-/// yyyyyyyyyyyyyyy yyyyyyyyyyyyyyy
-/// oooooooooooooooooooooooooooooo0
-/// iiiiiiiiiiiiiiiiiiiiiiiiiiiiii
-/// eeeeeeeeeeeeeeeeeeeeeeeeeeeeee new
-/// uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
-/// uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu new
-fn le_func_2(){
-    print!("gachimuchi");
-}
