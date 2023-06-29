@@ -11,6 +11,7 @@ fn main()->Result<(), Box<dyn Error>> {
         let stream = stream.unwrap();
         println!("stream {i} detected: {stream:?}");
         println!("INSERTION");
+        println!("INSERTION 2");
         // handle tcp stream 
         handle(stream);
     }
