@@ -24,7 +24,7 @@ fn handle(mut stream: TcpStream){
         .collect();
 
     
-    //println!("request: {request:?}");
+    println!("request: {request:?}");
     let response = "HTTP/1.1 200 OK\r\n\r\n";
 
     stream.write_all(response.as_bytes()).unwrap();
