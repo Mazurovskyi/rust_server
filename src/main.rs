@@ -42,6 +42,16 @@ fn do_smth(){
 fn do_smth_2(){
     
 }
+
 fn le_func(){
+    
+}
+
+
+/// aaaaaaaaaaaaaaa aaaaaaaaaaaaaaa
+/// bbbbbbbbbbbbbbb bbbbbbbbbbbbbbb
+/// ccccccccccccccc ccccccccccccccc
+/// ddddddddddddddd ddddddddddddddd
+fn le_func_2(){
     
 }
