@@ -9,7 +9,7 @@ fn main() {
 
     for (i, stream) in listener.incoming().enumerate(){
         let stream = stream.unwrap();
-        println!("stream detected: {stream:?}");
+        println!("stream {i} detected: {stream:?}");
         // handle tcp stream
         handle(stream);
     }
