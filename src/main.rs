@@ -52,6 +52,7 @@ fn le_func(){
 /// bbbbbbbbbbbbbbb bbbbbbbbbbbbbbb
 /// ccccccccccccccc ccccccccccccccc
 /// ddddddddddddddd ddddddddddddddd
+/// yyyyyyyyyyyyyyy yyyyyyyyyyyyyyy
 fn le_func_2(){
-    
+
 }
