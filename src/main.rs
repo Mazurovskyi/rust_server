@@ -60,5 +60,5 @@ fn le_func(){
 /// uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
 /// uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu new
 fn le_func_2(){
-
+    print!("gachi");
 }
