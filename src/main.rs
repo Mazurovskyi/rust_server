@@ -7,9 +7,9 @@ fn main()->Result<(), Box<dyn Error>> {
 
     let listener = TcpListener::bind("127.0.0.1:7878")?;
 
-    for (i, stream) in listener.incoming().enumerate(){
+    for (_i, stream) in listener.incoming().enumerate(){
         let stream = stream.unwrap();
-        println!("stream {i} detected: {stream:?}");
+        println!("stream detected: {stream:?}");
         // handle tcp stream 
         handle(stream);
     }
