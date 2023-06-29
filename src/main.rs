@@ -10,7 +10,8 @@ fn main()->Result<(), Box<dyn Error>> {
     for (i, stream) in listener.incoming().enumerate(){
         let stream = stream.unwrap();
         println!("stream {i} detected: {stream:?}");
-        // handle tcp stream
+        println!("INSERTION");
+        // handle tcp stream 
         handle(stream);
     }
 
