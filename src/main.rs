@@ -12,7 +12,7 @@ fn main()->Result<(), Box<dyn Error>> {
         println!("stream {i} detected: {stream:?}");
         handle(stream);
     }
-
+    // commit message
     Ok(())
 } 
 
