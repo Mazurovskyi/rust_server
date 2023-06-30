@@ -14,7 +14,7 @@ fn main()->Result<(), Box<dyn Error>> {
     }
 
     Ok(())
-}
+} 
 
 fn handle(mut stream: TcpStream){
     let buf_reader = BufReader::new(&mut stream);
